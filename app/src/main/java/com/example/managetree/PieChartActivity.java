@@ -29,7 +29,9 @@ public class PieChartActivity extends AppCompatActivity {
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
         List<Tree> list = database.treeDao().findAllTree();
         for (int i = 0; i < list.size(); i++) {
-            pieEntries.add(new PieEntry(Float.parseFloat(list.get(i).diameter), "Category = "+ i));
+            if (list.get(i) != null) {
+                pieEntries.add(new PieEntry(Float.parseFloat(list.get(i).diameter), "Category = " + i));
+            }
         }
 
         PieDataSet dataSet = new PieDataSet(pieEntries, "Biểu đồ");

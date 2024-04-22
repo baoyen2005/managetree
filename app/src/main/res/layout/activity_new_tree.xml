@@ -93,6 +93,14 @@
             android:textColorHint="@color/green"
             android:textSize="14sp"
             android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/ivTree"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+
     </LinearLayout>
 
     <Button

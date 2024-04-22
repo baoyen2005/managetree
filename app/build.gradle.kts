@@ -52,5 +52,6 @@ dependencies {
     kapt("androidx.room:room-compiler:2.2.5")
     annotationProcessor("androidx.room:room-compiler:2.2.5")
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-
+    implementation ("com.github.bumptech.glide:glide:4.13.1")
+    androidTestAnnotationProcessor("com.github.bumptech.glide:compiler:4.13.1")
 }

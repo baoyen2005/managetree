@@ -9,17 +9,17 @@ public class Tree {
     @PrimaryKey(autoGenerate = true)
     public long id;
     @ColumnInfo(name = "name")
-    public String name;
+    public String name = "";
     @ColumnInfo(name = "height")
-    public String height;
+    public String height = "0";
     @ColumnInfo(name = "quantity_fruit")
-    public String quantityFruit;
+    public String quantityFruit = "0";
     @ColumnInfo(name = "leaf_color")
-    public String leafColor;
+    public String leafColor = "";
     @ColumnInfo(name = "diameter") // duong kinh
-    public String diameter;
+    public String diameter = "0";
     @ColumnInfo(name = "designation")
-    public String designation;
+    public String designation = "";
     @ColumnInfo(name = "path")
-    public String path;
+    public String path = "";
 }
